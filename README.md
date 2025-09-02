@@ -1,6 +1,14 @@
+| Language |
+|----------|
+| [**English**](README.md) |
+| [**Русский**](README.ru.md) |
+
+
 # 📁 Upload Plus — Advanced Upload Plugin for NodeBB
 
 **Upload Plus** supercharges NodeBB’s file uploader:
+
+
 
 - Stores files in **scalable sub-folders** (hash or date) so you never hit a single-directory bottleneck.  
 - Optionally **auto-converts images to WebP**, shrinking size without quality loss.  
