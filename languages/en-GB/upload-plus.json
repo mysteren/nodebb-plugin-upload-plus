@@ -1,0 +1,12 @@
+{
+  "admin": {
+    "menu": "Upload Plus",
+    "title": "Upload Plus Settings",
+    "paths_type": "Path strategy",
+    "paths_type_hash": "Hash (3-level subdirs)",
+    "paths_type_date": "Date (YYYY/MM/DD)",
+    "convert_to_webp": "Convert images to WebP",
+    "save": "Save",
+    "saved": "Settings saved"
+  }
+}

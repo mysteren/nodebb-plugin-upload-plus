@@ -5,5 +5,7 @@
     { "hook": "static:app.load", "method": "init" },
     { "hook": "filter:uploadFile", "method": "handleUpload" },
     { "hook": "filter:admin.header.build", "method": "addAdminNav" }
-  ]
+  ],
+  "languages": "languages",
+  "acpScripts": [ "static/admin.js" ]
 }

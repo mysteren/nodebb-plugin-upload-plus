@@ -1,0 +1,15 @@
+{
+  "admin": {
+    "menu": "Upload Plus",
+    "title": "Настройки Upload Plus",
+    "paths_type": "Стратегия путей",
+    "paths_type_hash": "Хэш (подкаталоги)",
+    "paths_type_date": "Дата (ГГГГ/ММ/ДД)",
+    "depth": "Глубина каталогов",
+    "depth_2": "2 уровня",
+    "depth_3": "3 уровня",
+    "convert_to_webp": "Конвертировать изображения в WebP",
+    "save": "Сохранить",
+    "saved": "Настройки сохранены"
+  }
+}
