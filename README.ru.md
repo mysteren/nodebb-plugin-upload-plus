@@ -89,4 +89,4 @@ npm link            # в папке nodebb
 
 ## 📄 Лицензия
 
-MIT © 2024 Upload Plus Contributors
+MIT © 2025 Upload Plus Contributors

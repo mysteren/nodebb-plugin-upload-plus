@@ -90,39 +90,4 @@ Code map:
 
 ## 📄 License
 
-MIT © 2024 Upload Plus Contributors
-
----
-
-## How to split README into two languages
-
-### Option 1 – separate files
-```
-README.md
-README.ru.md
-```
-
-In the root `README.md` add links:
-
-```md
-## 🌍 Languages
-- [English](README.md)  
-- [Русский](README.ru.md)
-```
-
-### Option 2 – single file with toggles
-```md
-<details open>
-  <summary>🇬🇧 English</summary>
-
-  …English text…
-</details>
-
-<details>
-  <summary>🇷🇺 Русский</summary>
-
-  …Russian text…
-</details>
-```
-
-Pick whichever style you prefer; both work on GitHub.
+MIT © 2025 Upload Plus Contributors
