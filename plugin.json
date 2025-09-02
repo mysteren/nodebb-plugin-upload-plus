@@ -1,0 +1,9 @@
+{
+  "id": "upload-plus",
+  "library": "./lib/uploader.js",
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "filter:uploadFile", "method": "handleUpload" },
+    { "hook": "filter:admin.header.build", "method": "addAdminNav" }
+  ]
+}
