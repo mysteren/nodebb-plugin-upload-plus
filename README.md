@@ -43,7 +43,7 @@ Visit ACP → Plugins → Upload Plus
 
 | Strategy | Depth 2 | Depth 3 |
 |---|---|---|
-| **hash** | `uploads/files/a/b/filename.ext` | `uploads/files/a/b/c/filename.ext` |
+| **hash** | `uploads/files/a1/b2/filename.ext` | `uploads/files/a1/b2/c3/filename.ext` |
 | **date** | `uploads/files/2024/09/02/filename.ext` | — |
 
 SHA-256 of the file name → first 2 or 3 chars become folder names.
@@ -55,7 +55,7 @@ SHA-256 of the file name → first 2 or 3 chars become folder names.
 - Runs **only on images**.  
 - Produces `filename.webp` next to the original.  
 - Returns the **WebP URL** to the client.  
-- Quality set to 80 %.
+- Quality set to 83 %.
 
 ---
 
@@ -73,18 +73,11 @@ ACP language is taken from NodeBB’s locale.
 ## 🛠️ Development / Fork
 
 ```bash
-git clone https://github.com/yourname/nodebb-plugin-upload-plus.git
+git clone https://github.com/mysteren/nodebb-plugin-upload-plus.git
 cd nodebb-plugin-upload-plus
 npm install
 npm link          # inside NodeBB folder
 ```
-
-Code map:
-
-- `lib/uploader.js` – core logic  
-- `languages/` – translations  
-- `templates/` – ACP settings template  
-- `static/admin.js` – ACP JS
 
 ---
 

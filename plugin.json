@@ -1,11 +1,24 @@
 {
   "id": "upload-plus",
-  "library": "./lib/uploader.js",
+  "description": "Enhanced file upload with custom paths and WebP conversion",
+  "url": "https://github.com/mysteren/nodebb-plugin-upload-plus",
   "hooks": [
-    { "hook": "static:app.load", "method": "init" },
-    { "hook": "filter:uploadFile", "method": "handleUpload" },
-    { "hook": "filter:admin.header.build", "method": "addAdminNav" }
+    {
+			"hook": "static:app.load",
+			"method": "init"
+		},
+		{
+			"hook": "filter:uploadStored",
+			"method": "filterUploadStored"
+		},
+		{
+			"hook": "filter:admin.header.build",
+			"method": "addAdminNavigation"
+		}
   ],
+  "modules": {
+		"../admin/plugins/upload-plus.js": "static/lib/admin.js"
+	},
   "languages": "languages",
-  "acpScripts": [ "static/admin.js" ]
+  "templates": "templates"
 }

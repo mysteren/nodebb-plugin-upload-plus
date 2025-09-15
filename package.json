@@ -1,13 +1,18 @@
 {
   "name": "nodebb-plugin-upload-plus",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Advanced upload plugin for NodeBB with sub-folder strategy and optional WebP conversion",
   "keywords": [
+    "forum",
     "nodebb",
     "plugin",
     "hash",
     "upload",
-    "webp"
+    "webp",
+    "storage",
+    "file management",
+    "sha256",
+    "sub-folder"
   ],
   "repository": {
     "type": "git",
@@ -19,8 +24,6 @@
     "name": "Timofey",
     "email": "mysterenct@gmail.com"
   },
-  "type": "module",
-  "main": "./lib/uploader.js",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -28,7 +31,7 @@
     }
   },
   "nbbpm": {
-    "compatibility": "^3.2.0"
+    "compatibility": "^4.0.0"
   },
   "lint-staged": {
     "*.js": [
@@ -36,6 +39,7 @@
       "git add"
     ]
   },
+  "main": "./library.js",
   "scripts": {
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"

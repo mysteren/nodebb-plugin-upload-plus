@@ -1,12 +1,25 @@
 {
-  "admin": {
-    "menu": "Upload Plus",
-    "title": "Upload Plus Settings",
-    "paths_type": "Path strategy",
-    "paths_type_hash": "Hash (3-level subdirs)",
-    "paths_type_date": "Date (YYYY/MM/DD)",
-    "convert_to_webp": "Convert images to WebP",
-    "save": "Save",
-    "saved": "Settings saved"
-  }
+    "setting.paths_type": "Path Structure Type",
+    "setting.convert_to_webp": "Convert Images to WebP",
+    "setting.webp_quality": "WebP Quality",
+    "settings-apply-note": "Please rebuild and restart your NodeBB to apply these settings.",
+    "section-paths": "File Path Structure",
+    "section-paths-description": "Configure how uploaded files are organized in directories.",
+    "path-structure-type": "Path Structure Type",
+    "default": "Default",
+    "default-desc": "Files are saved to the default /uploads/files/ directory.",
+    "hash-level-2": "SHA256 Hash (2 levels)",
+    "hash-level-2-desc": "Creates a path like .../a1/b2/filename.ext",
+    "hash-level-3": "SHA256 Hash (3 levels)",
+    "hash-level-3-desc": "Creates a path like .../a1/b2/c3/filename.ext",
+    "date": "Date",
+    "date-desc": "Creates a path like .../YYYY/MM/DD/filename.ext",
+    "section-webp": "WebP Conversion",
+    "section-webp-description": "Automatically convert uploaded images to the efficient WebP format.",
+    "convert-images-to-webp": "Convert Images to WebP",
+    "convert-images-to-webp-desc": "If enabled, uploaded images will be converted to WebP format. The original image file will be deleted. Supported formats: JPEG, PNG, GIF, TIFF, WebP.",
+    "webp-quality": "WebP Quality",
+    "webp-quality-desc": "Quality setting for WebP compression (1-100). Higher is better quality but larger file size. Used only if \"Convert Images to WebP\" is enabled.",
+    "alert.title": "Settings Saved",
+    "alert.message": "Settings of plugin saved. Please restart NodeBB to apply changes."
 }

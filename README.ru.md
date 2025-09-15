@@ -42,7 +42,7 @@ ACP → Plugins → **Upload Plus**
 
 | Стратегия | Глубина 2 | Глубина 3 |
 |-----------|-----------|-----------|
-| **hash**  | `uploads/files/a/b/filename.ext` | `uploads/files/a/b/c/filename.ext` |
+| **hash**  | `uploads/files/a1/b2/filename.ext` | `uploads/files/a1/b2/c3/filename.ext` |
 | **date**  | `uploads/files/2024/09/02/filename.ext` | — |
 
 Хеш формируется на основе SHA-256 имени файла → первые 2 или 3 символа используются как имена папок.
@@ -53,7 +53,7 @@ ACP → Plugins → **Upload Plus**
 
 - Срабатывает **только для изображений**.  
 - Рядом с оригиналом создаётся `filename.webp`.  
-- Качество WebP: 80 %.  
+- Качество WebP: 83 %.  
 - Клиенту возвращается URL именно `.webp`-файла.
 
 ---
@@ -72,18 +72,11 @@ ACP → Plugins → **Upload Plus**
 ## 🛠️ Разработка / форк
 
 ```bash
-git clone https://github.com/yourname/nodebb-plugin-upload-plus.git
+git clone https://github.com/mysteren/nodebb-plugin-upload-plus.git
 cd nodebb-plugin-upload-plus
 npm install
 npm link            # в папке nodebb
 ```
-
-Структура:
-
-- `lib/uploader.js` — основная логика  
-- `languages/` — переводы  
-- `templates/` — шаблон настроек ACP  
-- `static/admin.js` — JS для админки
 
 ---
 
