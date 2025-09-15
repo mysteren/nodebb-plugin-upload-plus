@@ -4,6 +4,9 @@
 | [**Русский**](README.ru.md) |
 
 
+[![npm version](https://badge.fury.io/js/nodebb-plugin-upload-plus.svg?nocache=1)](https://badge.fury.io/js/nodebb-plugin-upload-plus)
+[![Downloads](https://img.shields.io/npm/dm/nodebb-plugin-upload-plus.svg)](nodebb-plugin-upload-plus)
+
 # 📁 Upload Plus — Advanced Upload Plugin for NodeBB
 
 **Upload Plus** supercharges NodeBB’s file uploader:
