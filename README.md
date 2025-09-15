@@ -41,10 +41,12 @@ Visit ACP → Plugins → Upload Plus
 
 ## 📂 Storage Layout
 
-| Strategy | Depth 2 | Depth 3 |
-|---|---|---|
-| **hash** | `uploads/files/a1/b2/filename.ext` | `uploads/files/a1/b2/c3/filename.ext` |
-| **date** | `uploads/files/2024/09/02/filename.ext` | — |
+| Strategy | example |
+|---|---|
+| **none** | `uploads/files/filename.ext` | 
+| **hash 2** | `uploads/files/a1/b2/filename.ext` |
+| **hash 3** | `uploads/files/a1/b2/c3/filename.ext` | 
+| **date** | `uploads/files/2024/09/02/filename.ext` |
 
 SHA-256 of the file name → first 2 or 3 chars become folder names.
 

@@ -40,10 +40,12 @@ ACP → Plugins → **Upload Plus**
 
 ## 📁 Как строятся пути
 
-| Стратегия | Глубина 2 | Глубина 3 |
-|-----------|-----------|-----------|
-| **hash**  | `uploads/files/a1/b2/filename.ext` | `uploads/files/a1/b2/c3/filename.ext` |
-| **date**  | `uploads/files/2024/09/02/filename.ext` | — |
+| Стратегия | пример |
+|---|---|
+| **none** | `uploads/files/filename.ext` | 
+| **hash 2** | `uploads/files/a1/b2/filename.ext` |
+| **hash 3** | `uploads/files/a1/b2/c3/filename.ext` | 
+| **date** | `uploads/files/2024/09/02/filename.ext` |
 
 Хеш формируется на основе SHA-256 имени файла → первые 2 или 3 символа используются как имена папок.
 
