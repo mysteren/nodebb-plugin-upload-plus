@@ -5,9 +5,7 @@ const { processStoredFile } = require('./lib/upload-plus');
 const controllers = require('./lib/controllers');
 const settings = require('./lib/settings');
 
-const plugin = module.exports;
-
-plugin.init = async (params) => {
+const init = async (params) => {
     const { router } = params;
     const routeHelpers = require.main.require('./src/routes/helpers');
 
@@ -17,15 +15,21 @@ plugin.init = async (params) => {
     routeHelpers.setupAdminPageRoute(router, '/admin/plugins/upload-plus', controllers.renderAdminPage);
 };
 
-plugin.filterUploadStored = async (data) => {
+const filterUploadStored = async (data) => {
     return await processStoredFile(data);
 };
 
-plugin.addAdminNavigation = (header) => {
+const addAdminNavigation = (header) => {
     header.plugins.push({
         route: '/plugins/upload-plus',
         icon: 'fa-upload',
         name: 'Upload Plus'
     });
     return header;
+};
+
+module.exports = {
+    init,
+    filterUploadStored,
+    addAdminNavigation
 };
