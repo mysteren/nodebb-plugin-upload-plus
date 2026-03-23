@@ -1,5 +1,6 @@
 {
     "setting.paths_type": "Тип структуры путей",
+    "setting.random_filename": "Случайное имя файла",
     "setting.convert_to_webp": "Конвертировать изображения в WebP",
     "setting.webp_quality": "Качество WebP",
     
@@ -16,6 +17,10 @@
     "date": "Дата",
     "date-desc": "Создает путь вида .../ГГГГ/ММ/ДД/filename.ext",
     
+    "section-random-filename": "Случайное имя файла",
+    "section-random-filename-description": "Переименуйте загруженные файлы в случайные имена, чтобы предотвратить конфликты имен и улучшить конфиденциальность.",
+    "enable-random-filename": "Включить случайное имя файла",
+    "enable-random-filename-desc": "Если включено, загруженные файлы будут переименованы в SHA256(временная метка + оригинальное имя файла).ext.",
     "section-webp": "Конвертация в WebP",
     "section-webp-description": "Автоматически конвертируйте загружаемые изображения в эффективный формат WebP.",
     "convert-images-to-webp": "Конвертировать изображения в WebP",

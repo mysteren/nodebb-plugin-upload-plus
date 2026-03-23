@@ -1,5 +1,6 @@
 {
     "setting.paths_type": "路径结构类型",
+    "setting.random_filename": "随机文件名",
     "setting.convert_to_webp": "将图片转换为 WebP",
     "setting.webp_quality": "WebP 质量",
     "settings-apply-note": "请重新构建并重启 NodeBB 以应用这些设置。",
@@ -14,6 +15,10 @@
     "hash-level-3-desc": "生成类似 .../a1/b2/c3/filename.ext 的路径",
     "date": "日期",
     "date-desc": "生成类似 .../YYYY/MM/DD/filename.ext 的路径",
+    "section-random-filename": "随机文件名",
+    "section-random-filename-description": "将上传的文件重命名为随机文件名，防止文件名冲突并提高隐私性。",
+    "enable-random-filename": "启用随机文件名",
+    "enable-random-filename-desc": "如果启用，上传的文件将被重命名为 SHA256(时间戳 + 原始文件名).ext 格式。",
     "section-webp": "WebP 转换",
     "section-webp-description": "自动将上传的图片转换为高效的 WebP 格式。",
     "convert-images-to-webp": "将图片转换为 WebP",
