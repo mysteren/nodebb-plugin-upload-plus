@@ -36,8 +36,7 @@
 					<h5>[[upload-plus:section-random-filename]]</h5>
 					<p class="text-muted">[[upload-plus:section-random-filename-description]]</p>
 					<div class="form-check mb-3">
-						<input type="hidden" name="random_filename" value="off" />
-						<input type="checkbox" class="form-check-input" id="random_filename" />
+						<input type="checkbox" class="form-check-input" id="random_filename" name="random_filename"/>
 						<label class="form-check-label" for="random_filename">[[upload-plus:enable-random-filename]]</label>
 						<div class="form-text">[[upload-plus:enable-random-filename-desc]]</div>
 					</div>
