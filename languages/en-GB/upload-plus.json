@@ -1,5 +1,6 @@
 {
     "setting.paths_type": "Path Structure Type",
+    "setting.random_filename": "Random Filename",
     "setting.convert_to_webp": "Convert Images to WebP",
     "setting.webp_quality": "WebP Quality",
     "settings-apply-note": "Please rebuild and restart your NodeBB to apply these settings.",
@@ -14,6 +15,10 @@
     "hash-level-3-desc": "Creates a path like .../a1/b2/c3/filename.ext",
     "date": "Date",
     "date-desc": "Creates a path like .../YYYY/MM/DD/filename.ext",
+    "section-random-filename": "Random Filename",
+    "section-random-filename-description": "Rename uploaded files to random filenames to prevent filename collisions and improve privacy.",
+    "enable-random-filename": "Enable Random Filename",
+    "enable-random-filename-desc": "If enabled, uploaded files will be renamed to SHA256(timestamp + original filename).ext.",
     "section-webp": "WebP Conversion",
     "section-webp-description": "Automatically convert uploaded images to the efficient WebP format.",
     "convert-images-to-webp": "Convert Images to WebP",

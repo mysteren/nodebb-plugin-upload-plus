@@ -29,6 +29,11 @@ define('admin/plugins/upload-plus', ['settings', 'alerts'], function (Settings, 
             });
         });
 
+        // Обработчик для переключателя random_filename
+        $('#random_filename').on('change', function () {
+            $('[name="random_filename"]').val(this.checked ? 'on' : 'off');
+        });
+
         // Обработчик для переключателя convert_to_webp
         $('#convert_to_webp').on('change', function () {
             $('[name="convert_to_webp"]').val(this.checked ? 'on' : 'off');
@@ -39,6 +44,9 @@ define('admin/plugins/upload-plus', ['settings', 'alerts'], function (Settings, 
             if (err) return;
             if (settings.convert_to_webp === 'on') {
                 $('#convert_to_webp').prop('checked', true);
+            }
+            if (settings.random_filename === 'on') {
+                $('#random_filename').prop('checked', true);
             }
         });
     };
